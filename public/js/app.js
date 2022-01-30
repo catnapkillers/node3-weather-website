@@ -35,7 +35,7 @@ weatherForm.addEventListener('submit', (e) => {
             } else {
                 console.log(data.forecast)
                 messageOne.textContent = data.location
-                messageTwo.textContent = data.forecast  
+                messageTwo.textContent = data.forecast + ', ' + data.temperature + ' degrees fahrenheit (feels like ' + data.feelsLike + ' degrees)'
             }
         })
     })
